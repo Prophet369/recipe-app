@@ -1,10 +1,9 @@
 const button = document.querySelector(".search");
 const input = document.querySelector(".foodInput");
 const recipeData = document.querySelector("#content");
-const API_ID = process.env.API_ID;
-const API_KEY = process.env.API_KEY;
+const API_ID = "f38cf42b";
+const API_KEY = "940188b8e6db4aa8f205be61600cb5b5";
 let generatedHTML = "";
-require("dotenv").config();
 
 const getRecipes = async function () {
   const resp = await fetch(
